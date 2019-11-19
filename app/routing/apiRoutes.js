@@ -15,16 +15,33 @@ var newFriend = {
   scores: req.body.scores
 }
 
+//res.json(friendsData);
+var score = req.body.scores;
+for(var i = 0; i < score.length; i++){
+  //console.log(score[0]);
+}
+var lastDiff = 100;
+var bestMatch = {};
+for(var i = 0; i < friendsData.length; i++){
+  var totalDiff = 0;
+  console.log(friendsData[i].scores);
+  for(var x = 0; x < friendsData[i].scores.length; x++){
+    totalDiff += Math.abs(friendsData[i].scores[x] - score[x]);
+    console.log(totalDiff);
+  }
+  if (totalDiff < lastDiff){
+    lastDiff = totalDiff;
+    totalDiff = 0;
+    bestMatch = friendsData[i];
+  }
+}
 friendsData.push(newFriend);
-res.json(friendsData);
-
-
-
+console.log(bestMatch);
+res.json(bestMatch);
 
 
 
 });
-
 
 
 
