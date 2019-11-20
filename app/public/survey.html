@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="style.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+
     <script
 src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -257,9 +258,9 @@ crossorigin="anonymous"
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Your match</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span  aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
@@ -267,7 +268,6 @@ crossorigin="anonymous"
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -321,7 +321,15 @@ crossorigin="anonymous"
 
       }).then(function(data){
         console.log(data);
-        $('#exampleModal').modal('show')
+        console.log(data.photo);
+        var img = $("<img>");
+        var div = $("<div>");
+          div = div.text(data.name);
+img.attr('src',data.photo);
+$('.modal-body').text("Here is your match.!");
+$('modal-body').append(img);
+console.log(img);        
+$('#exampleModal').modal('show')
       })
       });
     </script>

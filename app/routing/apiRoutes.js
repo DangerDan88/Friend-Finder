@@ -24,10 +24,10 @@ var lastDiff = 100;
 var bestMatch = {};
 for(var i = 0; i < friendsData.length; i++){
   var totalDiff = 0;
-  console.log(friendsData[i].scores);
+ // console.log(friendsData[i].scores);
   for(var x = 0; x < friendsData[i].scores.length; x++){
     totalDiff += Math.abs(friendsData[i].scores[x] - score[x]);
-    console.log(totalDiff);
+    //console.log(totalDiff);
   }
   if (totalDiff < lastDiff){
     lastDiff = totalDiff;
@@ -36,7 +36,7 @@ for(var i = 0; i < friendsData.length; i++){
   }
 }
 friendsData.push(newFriend);
-console.log(bestMatch);
+//console.log(bestMatch);
 res.json(bestMatch);
 
 
