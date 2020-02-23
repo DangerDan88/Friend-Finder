@@ -315,7 +315,7 @@
       $("#submit").on("click", function(event) {
         event.preventDefault();
         function validateForm() {
-          var isValid = true;
+          const isValid = true;
           $(".form").each(function() {
             if ($(this).val() === "") {
               isValid = false;
@@ -333,7 +333,7 @@
         // If all required fields are filled
         if (validateForm()) {
           console.log("clicked");
-          var userData = {
+          const userData = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             scores: [
@@ -356,8 +356,8 @@
         }).then(function(data) {
           console.log(data);
           console.log(data.photo);
-          var img = $("<img>");
-          var div = $("<div>");
+          const img = $("<img>");
+          const div = $("<div>");
           div = div.text(data.name);
           img.attr("src", data.photo);
           $(".modal-body").text("Here is your match.!");
