@@ -5,62 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link href="style.css" rel="stylesheet" />
 
     <script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"
-></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Friend Finder</title>
   </head>
-  <body>
-    <h1 class="text-4xl text-center block">Survey Questions</h1>
-    <br />
-    <a href="/"
-      ><button
-        type="button"
-        class="bg-blue-500 text-4xl underline border-2 rounded"
+  <body class="bg-pink-200">
+    <div class="flex-auto">
+      <h1 class="text-2xl bg-pink-200 text-center">Survey Questions</h1>
+      <br />
+      <a href="/"
+        ><button
+          type="button"
+          class="bg-transparent text-black text-xl underline border-2 border-black rounded-lg hover:bg-black hover:text-white"
+        >
+          Home
+        </button></a
       >
-        Home
-      </button></a
+    </div>
+    <div
+      class="flex-auto bg-pink-200 border-solid border-white border-2 rounded justify-center"
     >
-
-    <div class="container border-2 rounded content-center">
       <br />
       <ul>
         <li>
-          <label class="text-2xl">Name (Required)</label>
+          <label class="text-xl">Name (Required)</label>
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <input type="text" id="name" value="name" size="25" class="form" />
           </form>
         </li>
         <br />
         <li>
-          <label class="text-2xl">Link to Photo (Required)</label>
+          <label class="text-xl">Link to Photo (Required)</label>
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <input type="text" id="photo" value="name" size="25" class="form" />
           </form>
         </li>
         <br />
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 1
             <br />
             Your mind is always buzzing with unexplored ideas and plans.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q1">
               <option value="5">5 Strongly agree</option>
@@ -72,7 +87,7 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 2
             <br />
             Generally speaking, you rely more on your experience than your
@@ -80,7 +95,7 @@ crossorigin="anonymous"
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q2">
               <option value="5">5 Strongly agree</option>
@@ -92,7 +107,7 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 3
             <br />
             You find it easy to stay relaxed and focused even when there is some
@@ -100,7 +115,7 @@ crossorigin="anonymous"
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q3">
               <option value="5">5 Strongly agree</option>
@@ -112,14 +127,14 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 4
             <br />
             You rarely do something just out of sheer curiosity.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q4">
               <option value="5">5 Strongly agree</option>
@@ -131,14 +146,14 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 5
             <br />
             People can rarely upset you.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q5">
               <option value="5">5 Strongly agree</option>
@@ -150,14 +165,14 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 6
             <br />
             It is often difficult for you to relate to other people’s feelings.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q6">
               <option value="5">5 Strongly agree</option>
@@ -169,7 +184,7 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 7
             <br />
             In a discussion, truth should be more important than people’s
@@ -177,7 +192,7 @@ crossorigin="anonymous"
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q7">
               <option value="5">5 Strongly agree</option>
@@ -189,14 +204,14 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 8
             <br />
             You rarely get carried away by fantasies and ideas.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q8">
               <option value="5">5 Strongly agree</option>
@@ -208,7 +223,7 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 9
             <br />
             You think that everyone’s views should be respected regardless of
@@ -216,7 +231,7 @@ crossorigin="anonymous"
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q9">
               <option value="5">5 Strongly agree</option>
@@ -228,14 +243,14 @@ crossorigin="anonymous"
           </form>
         </li>
         <li>
-          <label class="text-2xl"
+          <label class="text-xl"
             >Question 10
             <br />
             You feel more energetic after spending time with a group of people.
           </label>
           <br />
           <form
-            class="border-dashed border-2 border-gray-600 overflow-hidden inline-block"
+            class="border-solid border-2 border-black overflow-hidden inline-block"
           >
             <select class="chosen-select" id="q10">
               <option value="5">5 Strongly agree</option>
@@ -247,90 +262,109 @@ crossorigin="anonymous"
           </form>
         </li>
         <button
-          class="bg-blue-500 text-4xl underline border-2 rounded"
+          class="bg-transparent text-black text-xl underline border-2 border-black rounded-lg hover:bg-black hover:text-white"
           type="submit"
           id="submit"
         >
           Submit
         </button>
       </ul>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Your match</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span  aria-hidden="true">&times;</span>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               ...
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button
+                type="button"
+                class="bg-transparent text-black text-xl underline border-2 border-black rounded-lg hover:bg-black hover:text-white"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+   
+    <footer class="flex bg-pink-200 text-black p-4 justify-center">
+      Daniel Osornio 2020 University of Utah CodingBootCamp
+    </footer>
 
     <script type="text/javascript">
-     
       $("#submit").on("click", function(event) {
         event.preventDefault();
         function validateForm() {
-        var isValid = true;
-        $(".form").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
+          var isValid = true;
+          $(".form").each(function() {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
 
-        $(".chosen-select").each(function() {
+          $(".chosen-select").each(function() {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
 
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
-      }
-
-      // If all required fields are filled
-      if (validateForm()) {
-        console.log("clicked");
-      var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-          ]
-        };
-        console.log(userData);
-      }
-      $.post("/api/friends", userData, function(data) {
+        // If all required fields are filled
+        if (validateForm()) {
+          console.log("clicked");
+          var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+          console.log(userData);
+        }
+        $.post("/api/friends", userData, function(data) {
           res.send(userData);
-
-      }).then(function(data){
-        console.log(data);
-        console.log(data.photo);
-        var img = $("<img>");
-        var div = $("<div>");
+        }).then(function(data) {
+          console.log(data);
+          console.log(data.photo);
+          var img = $("<img>");
+          var div = $("<div>");
           div = div.text(data.name);
-img.attr('src',data.photo);
-$('.modal-body').text("Here is your match.!");
-$('modal-body').append(img);
-console.log(img);        
-$('#exampleModal').modal('show')
-      })
+          img.attr("src", data.photo);
+          $(".modal-body").text("Here is your match.!");
+          $("modal-body").append(img);
+          console.log(img);
+          $("#exampleModal").modal("show");
+        });
       });
     </script>
   </body>
